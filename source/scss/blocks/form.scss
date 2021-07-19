@@ -43,6 +43,9 @@
   border: 0;
   border-radius: 3rem;
   outline: none;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity, transform, 0.4s ease-out;
 
   &:focus {
     border: 1px solid $c-purple;
@@ -144,5 +147,12 @@
     @media (max-width: $mobile) and (orientation: landscape) {
       width: calc(100% - 5rem);
     }
+  }
+}
+
+.active {
+  .form__field {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
