@@ -3971,6 +3971,7 @@ img {
   margin-top: 1.5rem;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.2s ease;
 }
 @media (min-width: 2000px) {
   .social-block__list {
@@ -4029,10 +4030,10 @@ img {
   opacity: 1;
 }
 .social-block--active .social-block__list li:nth-child(2) .social-block__link {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 .social-block--active .social-block__list li:nth-child(3) .social-block__link {
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
 }
 .social-block__list li {
   flex: none;
@@ -4065,7 +4066,7 @@ img {
   border-radius: 50%;
   left: 10px;
   opacity: 0;
-  transition: left, opacity, 0.4s ease-out;
+  transition: left, opacity, 0.2s ease-out;
 }
 @media (min-width: 2000px) {
   .social-block__link {
